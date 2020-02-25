@@ -1,7 +1,18 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { Component } from "react";
+import { Router } from "react-router-dom";
+import { createBrowserHistory } from "history";
+
 import "./styles/style.scss";
+import Routes from "./Routes";
 
-const template = <p>Hello from react</p>;
+const browserHistory = createBrowserHistory();
 
-ReactDOM.render(template, document.getElementById("root"));
+export default class App extends Component {
+  render() {
+    return (
+      <Router history={browserHistory}>
+        <Routes />
+      </Router>
+    );
+  }
+}
