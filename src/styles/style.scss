@@ -1,4 +1,5 @@
 @import "config";
+@import "utilities";
 
 * {
   box-sizing: border-box;
@@ -33,4 +34,35 @@ img {
 
 #root {
   height: 100%;
+}
+
+//Navbar
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.07rem 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  border-bottom: solid 0.5px $primary-color;
+  opacity: 0.9;
+  height: 3rem;
+
+  ul {
+    display: flex;
+  }
+
+  a {
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    margin: 0 0.25rem;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: darken($color: #fff, $amount: 20);
+    }
+  }
 }

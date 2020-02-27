@@ -1,0 +1,15 @@
+//background
+.bg {
+  &-primary {
+    @include set-background($primary-color);
+  }
+  &-secondary {
+    @include set-background($secondary-color);
+  }
+  &-white {
+    @include set-background($white-color);
+  }
+  &-dark {
+    @include set-background($dark-color);
+  }
+}
