@@ -8,6 +8,7 @@
   }
   &-white {
     @include set-background($white-color);
+    border-bottom: solid 0.5px $primary-color;
   }
   &-dark {
     @include set-background($dark-color);

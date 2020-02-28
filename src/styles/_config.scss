@@ -19,3 +19,12 @@ $max_width: 1100px;
   background-color: $color;
   color: set-text-color($color);
 }
+
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}

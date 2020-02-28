@@ -21,6 +21,11 @@ module.exports = {
           "css-loader", //2. turn css into commonjs
           "sass-loader" //1. turn sass into css
         ]
+      },
+      //Rules to load file
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ["file-loader"]
       }
     ]
   },

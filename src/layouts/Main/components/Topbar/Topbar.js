@@ -4,9 +4,9 @@ import { Link as RouteLink } from "react-router-dom";
 const Topbar = () => {
   return (
     <nav className="navbar bg-primary">
-      <div>
+      <h1>
         <RouteLink to="/">Cosmome</RouteLink>
-      </div>
+      </h1>
       <ul>
         <li>
           <RouteLink to="/">Join Comunity</RouteLink>

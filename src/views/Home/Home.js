@@ -1,7 +1,11 @@
 import React from "react";
 
 function Home() {
-  return <div></div>;
+  return (
+    <section className="landing">
+      <div className="dark-overlay"></div>
+    </section>
+  );
 }
 
 export default Home;
