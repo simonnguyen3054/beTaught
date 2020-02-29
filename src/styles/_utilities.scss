@@ -14,3 +14,42 @@
     @include set-background($dark-color);
   }
 }
+
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+//buttons
+button {
+  display: inline-block;
+  background: $secondary-color;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  outline: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  transition: opacity 0.5s ease-in-out;
+  font-weight: 700;
+
+  &.btn-primary {
+    @include set-background($primary-color);
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.btn {
+  @extend button;
+}
