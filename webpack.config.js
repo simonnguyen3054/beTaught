@@ -4,7 +4,8 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.join(__dirname, "public"),
-    filename: "bundle.js"
+    filename: "bundle.js",
+    publicPath: "/" //specify the base path for all the assets within application.
   },
   module: {
     rules: [
@@ -31,6 +32,7 @@ module.exports = {
   },
   devtool: "cheap-module-eval-source-map",
   devServer: {
-    contentBase: path.join(__dirname, "public")
+    contentBase: path.join(__dirname, "public"),
+    historyApiFallback: true //will redirect 404s to /index.html
   }
 };
