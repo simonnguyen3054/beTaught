@@ -9,10 +9,10 @@ const Topbar = () => {
       </h1>
       <ul>
         <li>
-          <RouteLink to="/">Join Comunity</RouteLink>
+          <RouteLink to="/profile">Join Comunity</RouteLink>
         </li>
         <li>
-          <RouteLink to="/">Login</RouteLink>
+          <RouteLink to="/profile">Login</RouteLink>
         </li>
       </ul>
     </nav>
