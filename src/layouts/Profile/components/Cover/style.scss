@@ -1,6 +1,5 @@
 .highlights {
   display: flex;
-  margin: .5rem;
   overflow-x: scroll;
 
   &-image {
@@ -8,25 +7,37 @@
     border-radius: 1rem;
     max-width: 223px;
     max-height: 362px;
+    object-fit: cover;
   }
 }
 
 .profile {
-  width: 7rem;
-  height: 7rem;
-  background-color: #fff;
-  clip-path: circle(50% at 50% 50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 1;
   position: relative;
-  bottom: 4rem;
-  left: 2.5rem;
+  bottom: 2rem;
+  left: 1rem;
+  display: flex;
+
+  &-outer {
+    width: 7rem;
+    height: 7rem;
+    clip-path: circle(50% at 50% 50%);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   &-inner {
     width: 6.7rem;
     height: 6.7rem;
     clip-path: circle(50% at 50% 50%);
   }
+
+  &-summary {
+    margin: 1rem;
+    position: relative;
+    top: 1.5rem;
+  }
+  
 }
