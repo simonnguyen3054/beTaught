@@ -1,0 +1,11 @@
+.highlights {
+  display: flex;
+  margin: 1rem;
+
+  &-image {
+    margin-right: .5rem;
+    border-radius: 1rem;
+    max-width: 223px;
+    max-height: 362px;
+  }
+}
