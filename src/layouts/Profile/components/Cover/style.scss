@@ -1,11 +1,32 @@
 .highlights {
   display: flex;
-  margin: 1rem;
+  margin: .5rem;
+  overflow-x: scroll;
 
   &-image {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     border-radius: 1rem;
     max-width: 223px;
     max-height: 362px;
+  }
+}
+
+.profile {
+  width: 7rem;
+  height: 7rem;
+  background-color: #fff;
+  clip-path: circle(50% at 50% 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  bottom: 4rem;
+  left: 2.5rem;
+
+  &-inner {
+    width: 6.7rem;
+    height: 6.7rem;
+    clip-path: circle(50% at 50% 50%);
   }
 }
