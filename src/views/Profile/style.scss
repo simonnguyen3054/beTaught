@@ -1,0 +1,33 @@
+.contact {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+
+  &-icons {
+    width: 3rem;
+    height: 3rem;
+    background-color: #e373dc;
+    background-image: linear-gradient(180deg, #e373dc 25%, #553ba3 100%);
+    clip-path: circle(50% at 50% 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      color: #fff;
+      width: 2rem;
+    }
+  }
+
+  &-divider {
+    width: 0.5px;
+    height: 3rem;
+    background-color: #000;
+    opacity: 0.3;
+  }
+}
+
+///////////////////grid/////////////////
+.grid {
+  width: calc(100% / 3);
+}

@@ -1,6 +1,7 @@
 .highlights {
   display: flex;
   overflow-x: scroll;
+  margin: 0.5rem;
 
   &-image {
     margin-right: 0.5rem;
@@ -39,5 +40,5 @@
     position: relative;
     top: 1.5rem;
   }
-  
+
 }

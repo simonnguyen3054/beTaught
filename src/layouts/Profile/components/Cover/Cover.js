@@ -1,6 +1,6 @@
 import React from "react";
 import { Link as RouteLink } from "react-router-dom";
-import { image1, image2, image3, image4, image5, image6, profile } from "../../../../assets";
+import { image1, image2, image3, image4, image5, image6, profile } from "../../../../assets/images";
 import "./style.scss";
 
 const Cover = () => {
